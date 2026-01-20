@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A + D 💌</title>
+
+<style>
+body {
+  background: #fff5fa;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  transform: rotate(-3deg);
+}
+
+.letter {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border: 3px dashed pink;
+  transform: rotate(2deg);
+}
+
+button {
+  background: pink;
+  border: 2px solid hotpink;
+  padding: 10px;
+  transform: rotate(-2deg);
+  cursor: pointer;
+}
+
+.sticker {
+  font-size: 30px;
+  position: absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sticker" style="top:20px;left:10px;">🦆</div>
+<div class="sticker" style="top:60px;right:20px;">🐸</div>
+<div class="sticker" style="top:120px;left:40px;">⭐</div>
+
+<h1>hi baby &lt;3</h1>
+
+<div class="letter">
+<p>
+i made this like a crazy middle school girl with zero skills  
+but maximum love for you.  
+if cringe = crime i would be in jail forever.
+</p>
+
+<p>
+A + D since <b>18 nov 2025</b>
+</p>
+</div>
+
+<button onclick="alert('CONGRATS YOU LOVE ME')">
+click if you love me
+</button>
+
+<h3>dumb reasons i love you</h3>
+<ul>
+<li>the way you breathe dramatically</li>
+<li>your bad jokes (they are art)</li>
+<li>sleepy voice = instant death</li>
+<li>pre-dating dates era</li>
+<li>you = such a kuchu puchu</li>
+<li>narc + yours truly vibes</li>
+<li>lots of mickies and minnies</li>
+<li>HOT GOSS moments</li>
+</ul>
+
+<script>
+setInterval(() => {
+  let heart = document.createElement("div");
+  heart.innerHTML = "💗";
+  heart.style.position = "fixed";
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.top = "-10px";
+  document.body.appendChild(heart);
+
+  let fall = setInterval(() => {
+    heart.style.top =
+      parseInt(heart.style.top) + 2 + "px";
+  }, 30);
+
+  setTimeout(()=>{clearInterval(fall); heart.remove();},4000);
+}, 300);
+</script>
+
+</body>
+</html>
